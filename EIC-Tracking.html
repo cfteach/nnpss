@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>EIC Tracking system &#8212; cfteach_nnpss</title>
+    <title>EIC Tracking system &#8212; AI for Detector Design NNPSS 2022</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,7 +26,6 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -56,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
-    <link rel="canonical" href="Webpage_address/EIC-Tracking.html" />
+    <link rel="canonical" href="https://cfteach.github.io/nnpss/EIC-Tracking.html" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -81,7 +80,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Building the page now</div>
+<div class="announcement header-item noprint"></div>
 <div class="header header-item noprint"></div>
 
     
@@ -105,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/ai4eic_logo.jpeg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">cfteach_nnpss</h1>
+      <h1 class="site-logo" id="site-title">AI for Detector Design NNPSS 2022</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -128,23 +127,18 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec1.pdf">
    Lecture 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec2.pdf">
    Lecture 2
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec3.pdf">
    Lecture 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="MOBO_concepts.html">
-   MOBO Concepts
   </a>
  </li>
  <li class="toctree-l1">
@@ -161,7 +155,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="driver_bo.html">
-   Create detector geometry and simulate tracks
+   Bayesian Optimization
   </a>
  </li>
  <li class="toctree-l1">
@@ -289,7 +283,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/https://github.com/cfteach/ml4hep"
+        <a href="https://github.com/cfteach/nnpss"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -306,7 +300,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/https://github.com/cfteach/ml4hep/issues/new?title=Issue%20on%20page%20%2FEIC-Tracking.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/cfteach/nnpss/issues/new?title=Issue%20on%20page%20%2FEIC-Tracking.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -323,7 +317,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/cfteach/ml4hep/edit/main/design_optimization/EIC-Tracking.md"
+        <a href="https://github.com/cfteach/nnpss/edit/main/notebooks/EIC-Tracking.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -472,11 +466,11 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="eic-tracking-system">
 <h1>EIC Tracking system<a class="headerlink" href="#eic-tracking-system" title="Permalink to this headline">#</a></h1>
 <p>The EIC Detector 1 tracking detector consists of the silicon vertex/tracking detector and <span class="math notranslate nohighlight">\(\mu\)</span>Rwell gas tracker. The AC-LGAD based Time of Flight (ToF) detector will provide hit information for the tracking reconstruction.</p>
-<p>The EIC Detector 1 concept is classified based on its pseduo rapidity <span class="math notranslate nohighlight">\(\eta\)</span> as shown in <a class="reference internal" href="#eic-detector-coverage"><span class="std std-numref">Fig. 5</span></a>. The Hadron endcap region is also called as the forward region, and the Electron endcap region is also called as the backward region. The region where there is a transition from the central barrel region to the end cap region is called as transition region.</p>
+<p>The EIC Detector 1 concept is classified based on its pseduo rapidity <span class="math notranslate nohighlight">\(\eta\)</span> as shown in <a class="reference internal" href="#eic-detector-coverage"><span class="std std-numref">Fig. 4</span></a>. The Hadron endcap region is also called as the forward region, and the Electron endcap region is also called as the backward region. The region where there is a transition from the central barrel region to the end cap region is called as transition region.</p>
 <figure class="align-default" id="eic-detector-coverage">
 <a class="reference internal image-reference" href="_images/eic-detector-coverage.png"><img alt="_images/eic-detector-coverage.png" src="_images/eic-detector-coverage.png" style="height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">EIC Detector 1 <span class="math notranslate nohighlight">\(\eta\)</span> coverage</span><a class="headerlink" href="#eic-detector-coverage" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">EIC Detector 1 <span class="math notranslate nohighlight">\(\eta\)</span> coverage</span><a class="headerlink" href="#eic-detector-coverage" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Below we summarize the different technologies that are used for tracking in EIC Detector 1 concept.</p>
@@ -581,7 +575,7 @@ title="Print to PDF"
     {
         requestKernel: true,
         binderOptions: {
-            repo: "cfteach/ml4hep",
+            repo: "cfteach/nnpss",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -625,11 +619,11 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By CFanelli<br/>
+    By Cristiano Fanelli<br/>
   
       &copy; Copyright 2022.<br/>
     <div class="extra_footer">
-      Footer title
+      National Nuclear Physics Summer School (NNPSS) 2022
     </div>
 </p>
         </footer>

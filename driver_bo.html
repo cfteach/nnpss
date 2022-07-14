@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Create detector geometry and simulate tracks &#8212; cfteach_nnpss</title>
+    <title>Bayesian Optimization &#8212; AI for Detector Design NNPSS 2022</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,7 +26,6 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -54,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
-    <link rel="canonical" href="Webpage_address/driver_bo.html" />
+    <link rel="canonical" href="https://cfteach.github.io/nnpss/driver_bo.html" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -79,7 +78,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Building the page now</div>
+<div class="announcement header-item noprint"></div>
 <div class="header header-item noprint"></div>
 
     
@@ -103,7 +102,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/ai4eic_logo.jpeg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">cfteach_nnpss</h1>
+      <h1 class="site-logo" id="site-title">AI for Detector Design NNPSS 2022</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -126,23 +125,18 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec1.pdf">
    Lecture 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec2.pdf">
    Lecture 2
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec3.pdf">
    Lecture 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="MOBO_concepts.html">
-   MOBO Concepts
   </a>
  </li>
  <li class="toctree-l1">
@@ -159,7 +153,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Create detector geometry and simulate tracks
+   Bayesian Optimization
   </a>
  </li>
  <li class="toctree-l1">
@@ -273,7 +267,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/cfteach/ml4hep/main?urlpath=tree/design_optimization/driver_bo.ipynb"
+        <a href="https://mybinder.org/v2/gh/cfteach/nnpss/main?urlpath=tree/notebooks/driver_bo.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -291,7 +285,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="http://jupyterhub.jlab.org/hub/user-redirect/git-pull?repo=https://github.com/https://github.com/cfteach/ml4hep&urlpath=tree/ml4hep/design_optimization/driver_bo.ipynb&branch=main"
+        <a href="http://jupyterhub.jlab.org/hub/user-redirect/git-pull?repo=https://github.com/cfteach/nnpss&urlpath=tree/nnpss/notebooks/driver_bo.ipynb&branch=main"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -309,7 +303,7 @@ title="Launch on JupyterHub"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/cfteach/ml4hep/blob/main/design_optimization/driver_bo.ipynb"
+        <a href="https://colab.research.google.com/github/cfteach/nnpss/blob/main/notebooks/driver_bo.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -370,7 +364,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/https://github.com/cfteach/ml4hep"
+        <a href="https://github.com/cfteach/nnpss"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -387,7 +381,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/https://github.com/cfteach/ml4hep/issues/new?title=Issue%20on%20page%20%2Fdriver_bo.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/cfteach/nnpss/issues/new?title=Issue%20on%20page%20%2Fdriver_bo.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -404,7 +398,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/cfteach/ml4hep/edit/main/design_optimization/driver_bo.ipynb"
+        <a href="https://github.com/cfteach/nnpss/edit/main/notebooks/driver_bo.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -493,18 +487,25 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Create detector geometry and simulate tracks
+   Bayesian Optimization
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#list-of-parameters">
-     LIST OF PARAMETERS
+    <a class="reference internal nav-link" href="#create-detector-geometry-and-simulate-tracks">
+     Create detector geometry and simulate tracks
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#define-objectives">
-     Define Objectives
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#list-of-parameters">
+       LIST OF PARAMETERS
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#define-objectives">
+       Define Objectives
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -566,7 +567,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Create detector geometry and simulate tracks</h1>
+                <h1>Bayesian Optimization</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -578,18 +579,25 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Create detector geometry and simulate tracks
+   Bayesian Optimization
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#list-of-parameters">
-     LIST OF PARAMETERS
+    <a class="reference internal nav-link" href="#create-detector-geometry-and-simulate-tracks">
+     Create detector geometry and simulate tracks
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#define-objectives">
-     Define Objectives
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#list-of-parameters">
+       LIST OF PARAMETERS
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#define-objectives">
+       Define Objectives
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -652,40 +660,22 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="bayesian-optimization">
+<h1>Bayesian Optimization<a class="headerlink" href="#bayesian-optimization" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!git clone https://github.com/cfteach/modules.git
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Execute once during the start.
+
+!git clone https://github.com/cfteach/modules.git
 !pip install scikit-optimize 
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cloning into &#39;modules&#39;...
-remote: Enumerating objects: 21, done.
-remote: Counting objects: 100% (21/21), done.
-remote: Compressing objects: 100% (20/20), done.
-remote: Total 21 (delta 3), reused 9 (delta 0), pack-reused 0
-Unpacking objects: 100% (21/21), done.
-Collecting scikit-optimize
-  Downloading scikit_optimize-0.9.0-py2.py3-none-any.whl (100 kB)
-     |████████████████████████████████| 100 kB 4.3 MB/s 
-?25hRequirement already satisfied: scikit-learn&gt;=0.20.0 in /usr/local/lib/python3.7/dist-packages (from scikit-optimize) (1.0.1)
-Collecting pyaml&gt;=16.9
-  Downloading pyaml-21.10.1-py2.py3-none-any.whl (24 kB)
-Requirement already satisfied: scipy&gt;=0.19.1 in /usr/local/lib/python3.7/dist-packages (from scikit-optimize) (1.4.1)
-Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-packages (from scikit-optimize) (1.1.0)
-Requirement already satisfied: numpy&gt;=1.13.3 in /usr/local/lib/python3.7/dist-packages (from scikit-optimize) (1.19.5)
-Requirement already satisfied: PyYAML in /usr/local/lib/python3.7/dist-packages (from pyaml&gt;=16.9-&gt;scikit-optimize) (3.13)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn&gt;=0.20.0-&gt;scikit-optimize) (3.0.0)
-Installing collected packages: pyaml, scikit-optimize
-Successfully installed pyaml-21.10.1 scikit-optimize-0.9.0
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">load_ext</span> <span class="n">autoreload</span> 
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="o">%</span><span class="n">load_ext</span> <span class="n">autoreload</span> 
 <span class="o">%</span><span class="n">autoreload</span> <span class="mi">2</span>
 
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span>
@@ -701,16 +691,22 @@ Successfully installed pyaml-21.10.1 scikit-optimize-0.9.0
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+</pre></div>
+</div>
+</div>
 </div>
 <section id="create-detector-geometry-and-simulate-tracks">
-<h1>Create detector geometry and simulate tracks<a class="headerlink" href="#create-detector-geometry-and-simulate-tracks" title="Permalink to this headline">#</a></h1>
+<h2>Create detector geometry and simulate tracks<a class="headerlink" href="#create-detector-geometry-and-simulate-tracks" title="Permalink to this headline">#</a></h2>
 <p>The module detector creates a simple 2D geometry of a wire based tracker made by 4 planes.</p>
 <p>The adjustable parameters are the radius of each wire, the pitch (along the y axis), and the shift along y and z of a plane with respect to the previous one.</p>
 <p>A total of 8 parameters can be tuned.</p>
 <p>The goal of this toy model, is to tune the detector design so to optimize the efficiency (fraction of tracks which are detected) as well as the cost for its realization. As a proxy for the cost, we use the material/volume (the surface in 2D) of the detector. For a track to be detetected, in the efficiency definition we require at least two wires hit by the track.</p>
 <p>So we want to maximize the efficiency (defined in <a class="reference external" href="http://detector.py">detector.py</a>) and minimize the cost.</p>
 <section id="list-of-parameters">
-<h2>LIST OF PARAMETERS<a class="headerlink" href="#list-of-parameters" title="Permalink to this headline">#</a></h2>
+<h3>LIST OF PARAMETERS<a class="headerlink" href="#list-of-parameters" title="Permalink to this headline">#</a></h3>
 <p>(baseline values)</p>
 <ul class="simple">
 <li><p>R = .5   [cm]</p></li>
@@ -774,8 +770,8 @@ R, pitch, y1, y2, y3, z1, z2, z3:  0.5 4.0 0.0 0.0 0.0 2.0 4.0 6.0
 :::: TRACK GENERATION ::::
 </pre></div>
 </div>
-<img alt="_images/driver_bo_3_1.png" src="_images/driver_bo_3_1.png" />
-<img alt="_images/driver_bo_3_2.png" src="_images/driver_bo_3_2.png" />
+<img alt="_images/driver_bo_4_1.png" src="_images/driver_bo_4_1.png" />
+<img alt="_images/driver_bo_4_2.png" src="_images/driver_bo_4_2.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fraction of tracks detected:  0.264
 </pre></div>
 </div>
@@ -784,7 +780,7 @@ R, pitch, y1, y2, y3, z1, z2, z3:  0.5 4.0 0.0 0.0 0.0 2.0 4.0 6.0
 </section>
 <hr class="docutils" />
 <section id="define-objectives">
-<h2>Define Objectives<a class="headerlink" href="#define-objectives" title="Permalink to this headline">#</a></h2>
+<h3>Define Objectives<a class="headerlink" href="#define-objectives" title="Permalink to this headline">#</a></h3>
 <p>Defines the objective function of the problem that can be used in the Bayesian Optimization.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -818,6 +814,7 @@ R, pitch, y1, y2, y3, z1, z2, z3:  0.5 4.0 0.0 0.0 0.0 2.0 4.0 6.0
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 <hr class="docutils" />
@@ -916,6 +913,7 @@ Best score (efficiency) =  0.41500000000000004
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;....plotting convergence&quot;</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">skopt.plots</span> <span class="kn">import</span> <span class="n">plot_convergence</span>
 <span class="n">plot_convergence</span><span class="p">((</span><span class="s2">&quot;BO: GP&quot;</span><span class="p">,</span> <span class="n">res_gp</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -926,7 +924,7 @@ Best score (efficiency) =  0.41500000000000004
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0de9cb0c90&gt;
 </pre></div>
 </div>
-<img alt="_images/driver_bo_14_2.png" src="_images/driver_bo_14_2.png" />
+<img alt="_images/driver_bo_15_2.png" src="_images/driver_bo_15_2.png" />
 </div>
 </div>
 </section>
@@ -958,7 +956,7 @@ Best score (efficiency) =  0.41500000000000004
 num_wires:  20
 </pre></div>
 </div>
-<img alt="_images/driver_bo_16_1.png" src="_images/driver_bo_16_1.png" />
+<img alt="_images/driver_bo_17_1.png" src="_images/driver_bo_17_1.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fraction of tracks detected:  0.415
 </pre></div>
 </div>
@@ -1050,7 +1048,7 @@ Best score =  0.33099999999999996
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0dc912c550&gt;
 </pre></div>
 </div>
-<img alt="_images/driver_bo_22_2.png" src="_images/driver_bo_22_2.png" />
+<img alt="_images/driver_bo_23_2.png" src="_images/driver_bo_23_2.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1063,7 +1061,7 @@ Best score =  0.33099999999999996
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/driver_bo_23_0.png" src="_images/driver_bo_23_0.png" />
+<img alt="_images/driver_bo_24_0.png" src="_images/driver_bo_24_0.png" />
 </div>
 </div>
 </section>
@@ -1155,7 +1153,7 @@ Best score =  0.796
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0de9b1bd10&gt;
 </pre></div>
 </div>
-<img alt="_images/driver_bo_28_2.png" src="_images/driver_bo_28_2.png" />
+<img alt="_images/driver_bo_29_2.png" src="_images/driver_bo_29_2.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1199,7 +1197,7 @@ Best score =  0.796
 num_wires:  21
 </pre></div>
 </div>
-<img alt="_images/driver_bo_32_1.png" src="_images/driver_bo_32_1.png" />
+<img alt="_images/driver_bo_33_1.png" src="_images/driver_bo_33_1.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fraction of tracks detected:  0.887
 </pre></div>
 </div>
@@ -1211,7 +1209,7 @@ num_wires:  21
     {
         requestKernel: true,
         binderOptions: {
-            repo: "cfteach/ml4hep",
+            repo: "cfteach/nnpss",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -1255,11 +1253,11 @@ num_wires:  21
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By CFanelli<br/>
+    By Cristiano Fanelli<br/>
   
       &copy; Copyright 2022.<br/>
     <div class="extra_footer">
-      Footer title
+      National Nuclear Physics Summer School (NNPSS) 2022
     </div>
 </p>
         </footer>

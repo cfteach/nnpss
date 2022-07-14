@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>AI at EIC &#8212; cfteach_nnpss</title>
+    <title>AI at EIC &#8212; AI for Detector Design NNPSS 2022</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,7 +26,6 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -56,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
-    <link rel="canonical" href="Webpage_address/EIC-Intro.html" />
+    <link rel="canonical" href="https://cfteach.github.io/nnpss/EIC-Intro.html" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -81,7 +80,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Building the page now</div>
+<div class="announcement header-item noprint"></div>
 <div class="header header-item noprint"></div>
 
     
@@ -105,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/ai4eic_logo.jpeg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">cfteach_nnpss</h1>
+      <h1 class="site-logo" id="site-title">AI for Detector Design NNPSS 2022</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -128,23 +127,18 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec1.pdf">
    Lecture 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec2.pdf">
    Lecture 2
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">
+  <a class="reference external" href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec3.pdf">
    Lecture 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="MOBO_concepts.html">
-   MOBO Concepts
   </a>
  </li>
  <li class="toctree-l1">
@@ -161,7 +155,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="driver_bo.html">
-   Create detector geometry and simulate tracks
+   Bayesian Optimization
   </a>
  </li>
  <li class="toctree-l1">
@@ -289,7 +283,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/https://github.com/cfteach/ml4hep"
+        <a href="https://github.com/cfteach/nnpss"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -306,7 +300,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/https://github.com/cfteach/ml4hep/issues/new?title=Issue%20on%20page%20%2FEIC-Intro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/cfteach/nnpss/issues/new?title=Issue%20on%20page%20%2FEIC-Intro.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -323,7 +317,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/cfteach/ml4hep/edit/main/design_optimization/EIC-Intro.md"
+        <a href="https://github.com/cfteach/nnpss/edit/main/notebooks/EIC-Intro.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -493,11 +487,11 @@ title="Print to PDF"
 <section id="ai-workflow-for-detector-design">
 <h1>AI workflow for detector design<a class="headerlink" href="#ai-workflow-for-detector-design" title="Permalink to this headline">#</a></h1>
 <p>Performance of the tracker is key to achieve the goals of the EIC physics program. The current tracker system in the EIC Detector 1 concept is assisted by AI. And the AI assisted optimization is anticipated to continue until the final R&amp;D stage. Optimizing such a large-scale detector is a very complex problem. Each sub-detector systems by itself is a complex design problem. In addition detector simulations could be very much resource intensive (like in <a class="reference external" href="https://geant4.web.cern.ch"><code class="docutils literal notranslate"><span class="pre">GEANT4</span></code></a>). This becomes the bottle neck for deep learning (DL) based approaches that learn the mapping between design space and the functional space. Fast Simulations with DL can indeed reduce the bottle neck, several design points need to be produced with <code class="docutils literal notranslate"><span class="pre">GEANT4</span></code> before injection in any DL architecture.</p>
-<p>Therefore, in the recent years, a workflow containing sequential AI-based strategy is gaining popularity. The workflow is outline below in <a class="reference internal" href="#eic-design-workflow"><span class="std std-numref">Fig. 3</span></a>.</p>
+<p>Therefore, in the recent years, a workflow containing sequential AI-based strategy is gaining popularity. The workflow is outline below in <a class="reference internal" href="#eic-design-workflow"><span class="std std-numref">Fig. 2</span></a>.</p>
 <figure class="align-default" id="eic-design-workflow">
 <img alt="_images/design_workflow.png" src="_images/design_workflow.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text"><strong>Workflow of detector design assisted by AI</strong> Also, refer various AI based strategies discussed in the <a class="reference external" href="https://docs.google.com/presentation/d/1gCQ0jeSJVSCiGt511XHdH-vJXh9hHKvzWEW2W4Rx19M/present?usp=sharing">lecture 1 CHANGE IT TO CORRECT ONE</a></span><a class="headerlink" href="#eic-design-workflow" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><a href="https://cfteach.github.io/nnpss/pdf/CF_NNPSS_lec1.pdf#page=28" target="_blank" rel="noopener noreferrer"> <strong> Workflow of detector design assisted by AI [Lecture 1] </strong> </a></span><a class="headerlink" href="#eic-design-workflow" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the above outlined workflow, physics events are injected</p>
@@ -505,11 +499,11 @@ title="Print to PDF"
 <hr class="docutils" />
 <section id="interplay-between-expertise">
 <h1>Interplay between expertise<a class="headerlink" href="#interplay-between-expertise" title="Permalink to this headline">#</a></h1>
-<p>To effectively design the detector, there has to be a effective and a constant communication between various expert groups. The figure <a class="reference internal" href="#eic-interplay-groups"><span class="std std-numref">Fig. 4</span></a> shows the significance of interplay between different working groups. This model was followed to design the tracking system <span id="id2">[<a class="reference internal" href="EIC-TrackerObj_Cons.html#id10" title="C. Fanelli, Z. Papandreou, and et. al Suresh. Ai-assisted optimization of the ecce tracking system at the electron ion collider. 2022. URL: https://arxiv.org/abs/2205.09185, doi:10.48550/ARXIV.2205.09185.">2</a>]</span> proposed by <a class="reference external" href="https://www.ecce-eic.org">ECCE</a> and currently being followed to further optimize the tracker (and possibly the PID systems)</p>
+<p>To effectively design the detector, there has to be a effective and a constant communication between various expert groups. The figure <a class="reference internal" href="#eic-interplay-groups"><span class="std std-numref">Fig. 3</span></a> shows the significance of interplay between different working groups. This model was followed to design the tracking system <span id="id2">[<a class="reference internal" href="EIC-TrackerObj_Cons.html#id10" title="C. Fanelli, Z. Papandreou, and et. al Suresh. Ai-assisted optimization of the ecce tracking system at the electron ion collider. 2022. URL: https://arxiv.org/abs/2205.09185, doi:10.48550/ARXIV.2205.09185.">2</a>]</span> proposed by <a class="reference external" href="https://www.ecce-eic.org">ECCE</a> and currently being followed to further optimize the tracker (and possibly the PID systems)</p>
 <figure class="align-default" id="eic-interplay-groups">
 <img alt="_images/interplay_groups.png" src="_images/interplay_groups.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text"><strong>Flowchart of continual optimization</strong> The figure shows the information flow between different working groups and summarizes the “Continual” optimization of a detector.</span><a class="headerlink" href="#eic-interplay-groups" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text"><strong>Flowchart of continual optimization</strong> The figure shows the information flow between different working groups and summarizes the “Continual” optimization of a detector.</span><a class="headerlink" href="#eic-interplay-groups" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="optimization-as-a-continuous-process">
@@ -543,7 +537,7 @@ title="Print to PDF"
     {
         requestKernel: true,
         binderOptions: {
-            repo: "cfteach/ml4hep",
+            repo: "cfteach/nnpss",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -587,11 +581,11 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By CFanelli<br/>
+    By Cristiano Fanelli<br/>
   
       &copy; Copyright 2022.<br/>
     <div class="extra_footer">
-      Footer title
+      National Nuclear Physics Summer School (NNPSS) 2022
     </div>
 </p>
         </footer>
